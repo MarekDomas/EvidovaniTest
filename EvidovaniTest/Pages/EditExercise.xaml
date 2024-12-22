@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="EvidovaniTest.Pages.EditExercise"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            VerticalOptions="Center"
+            WidthRequest="270">
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                Text="Vyberte cvik: " />
+            <Picker
+                x:Name="TypePicker"
+                HorizontalOptions="Start"
+                WidthRequest="250" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                Text="Počet sérií: " />
+            <Entry
+                x:Name="SeriesEntry"
+                HorizontalOptions="Start"
+                WidthRequest="100" />
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                Text="Počet opakování: " />
+            <Entry
+                x:Name="RepsEntry"
+                HorizontalOptions="Start"
+                WidthRequest="100" />
+            <Button
+                x:Name="AddExerciseBtn"
+                Margin="0,20,0,0"
+                Clicked="AddExerciseBtn_OnClicked"
+                Text="Přidat"
+                WidthRequest="100" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
